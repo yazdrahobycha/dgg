@@ -51,9 +51,9 @@ export default function MainInput() {
             />
             {loading ? <p className={styles.secondary}>Loading...</p>
                 : <button className={styles.secondary} onClick={fetchItems}>Get Tasks</button>}
-            {...items.map((item, i) => (<p key={i}>{item.name}</p>))}
         </div>
         {showClipboardMessage && <p>Copied to clipboard!</p>}
+            {...items.map((item, i) => (<p key={i}>{item.name}</p>))}
         </>
     );
 }
